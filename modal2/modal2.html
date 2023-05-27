@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./modStl.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <button id="modal-btn" class="button">Таблица для тестового</button>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">×</span>
+        <h2>Наш испытуемый</h2>
+      </div>
+      <div class="modal-body">
+        <p>Пример таблицы</p>
+        <p>Ячейки можно редактировать.</p>
+        <p>Адаптивность не делал.</p>
+
+        <div class="conteiner">
+          <div class="tab tab_1">
+            <table id="table">
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>20</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tab tab2">
+            First Name :<input type="text" name="fname" id="fname">
+            Last Name :<input type="text" name="lname" id="lname">
+            Age :<input type="number" name="age" id="age">
+            <button onclick="addHtmlTableRow()">Добавить</button>
+            <button onclick="editHtmlTableSelectedRow()">Изменить</button>
+            <button onclick="removeSelectedRow()">Удалить</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <h3>обм</h3>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9868ee913f3486d02b2f11de06919aec2d8446f308ef8cb78d75896680e8ef5&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  <p>Чтобы реализовать яндекс карту, полноценно через JS, нужен сайт под ключ. Сейчас у меня его нет. Это пример наброска отрисовки</p>
+
+  <script src="./modal2.js"></script>
+</body>
+</html>
